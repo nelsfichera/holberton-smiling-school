@@ -22,94 +22,91 @@
 
 <body>
     <!-- Header -->
-    <header class="pricing-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm bg-transparent">
-                <button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="holberton_school-icon-menu text-white"></span>
-                </button>
-                <a class="navbar-brand d-sm-none mx-auto text-center" href="homepage.html">
-                    <img class="my-3 ml-n5" src="images/smile_off.png" width="30" height="23" alt="Smile" loading="lazy">
-                    <div class="w-100"></div>
-                    <img class="mb-3 ml-n5" src="images/logo.png" width="115" height="30" alt="Logo" loading="lazy">
-                </a>
-                <a class="navbar-brand d-none d-sm-block" href="homepage.html">
-                    <img class="m-3" src="images/smile_off.png" width="37" height="30" alt="Smile" loading="lazy">
-                    <img src="images/logo.png" width="115" height="30" alt="Logo" loading="lazy">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-sm-none">
-                        <div class="d-sm-none mx-auto mt-3">
-                            <a class="nav-link purple-text text-uppercase text-center underline ul-courses" href="#">Courses</a>
-                            <a class="nav-link text-white text-uppercase text-center" href="pricing.html">Pricing</a>
-                            <a class="nav-link text-white text-uppercase text-center" href="#login">Login</a>
-                        </div>
-                    </div>
-                    <div class="d-none d-sm-block ml-auto">
-                        <div class="navbar-nav">
-                            <a class="nav-link purple-text text-uppercase underline ul-courses" href="#">Courses</a>
-                            <a class="nav-link text-white text-uppercase" href="pricing.html">Pricing</a>
-                            <a class="nav-link text-white text-uppercase" href="#login">Login</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Hero section -->
-        <section class="d-none d-sm-block">
-            <div class="container text-center text-white py-5">
-                <h1 class="coiny font-32">« Don’t cry because it’s over.<br>
-                    Smile because it happened. »</h1>
+    <header class="header container-fluid courses-header text-center text-white" id="courses">
+        <nav class="navbar justify-content-lg-around justify-content-md-around justify-content-sm-center">
+            <div class="row-cols-3 px-2 mt-3">
+              <img class="smile-school-logo mx-2" src="./images/smile_off.png"  href="./homepage.html" alt="Smile logo" style="max-width: 2.5rem; max-height: 2.5rem;">
+              <img class="smile-school-logo" src="./images/logo.png" href="./homepage.html"alt="Smile School logo"/>
+              <!-- HAMBURGER MENU -->
+              <button class="navbar-toggler mt-3 d-lg-none d-md-none float-sm-left align-top" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                <span class="navbar-toggler-icon ">
+                  <svg class="icon" viewBox="0 0 100 80" width="40" height="40">
+                  <rect class="" width="100" height="5" fill="white" rx="5" ry="5"></rect>
+                  <rect y="30" width="80" height="5" fill="white" rx="5" ry="5"></rect>
+                  <rect y="60" width="100" height="5" fill="white" rx="5" ry="5"></rect>
+                </svg></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-bar nav align-items-center">
+                  <li class="row-sm-3 mt-3 mx-2 nav-item">
+                    <a href="./courses.html" class="nav-link text-white text-center">COURSES</a>
+                  </li>
+                  <li class="row-sm-3 mt-3 mx-2 nav-item">
+                    <a href="./pricing.html" class="nav-link text-white text-center">PRICING</a>
+                  </li>
+                  <li class="row-sm-3 mt-3 mx-2 nav-item">
+                    <a href="./login.html" class="nav-link text-white text-center">LOGIN</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
+            <!--  -->
+            <div class="nav-lg-toggler d-lg-flex d-md-flex d-sm-none">
+              <ul class="nav d-lg-flex d-md-flex d-sm-none row mt-3 unstyled justify-content-space-between">
+                <li class="px-3 nav-item">
+                  <a href="./courses.html" class="nav-link text-white text-center">COURSES</a>
+                </li>
+                <li class="px-3 nav-item">
+                  <a href="./pricing.html" class="nav-link text-white text-center">PRICING</a>
+                </li>
+                <li class="px-3 nav-item">
+                  <a href="./login.html" class="nav-link text-white text-center">LOGIN</a>
+                </li>
+              </ul> 
+            </div>
+        </nav>
+    <h4 class="courses-header-tag text-center pt-2 pb-5">« Don’t cry because it’s over.<br><strong>Smile</strong> because it happened. »</h4>
     </header>
 
     <!-- Search section -->
-    <section class="purple-bg text-white font-22 py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-3">
-                    <div class="text-uppercase font-12 font-weight-bold">Keywords</div>
-                    <div class="input-group border-bottom">
-                        <span class="input-group-addon icon-bg">
-                            <div class="holberton_school-icon-search_1"></div>
-                        </span>
-                        <input type="text" class="form-control border-top-0 lightpurple-bg text-white border-0 search-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search by keywords">
-                    </div>
+    <section class="text-white row row-cols-3 px-5 py-5 align-items-center justify-content-space-around">
+        <div class="keywords pr-3">
+            <h5>KEYWORDS</h5>
+            <div class="input-group shadow-none">
+                <img src="images/holberton_school-icons/SVG/search_1.svg" class="input-group-prepend search" fill='%23ffffff'>
+                <input type="search" class="form-control shadow-none" id="keywords" aria-describedby="keywords" placeholder="Search by keywords">
+            </div>     
+        </div>
+        <div class="topic">
+            <h5>TOPIC</h5>
+            <div class="dropdown w-100">
+                <button class="btn btn-secondary dropdown-toggle dropdown-spacing shadow-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Novice
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Novice</a>
+                    <a class="dropdown-item" href="#">Intermediate</a>
+                    <a class="dropdown-item" href="#">Expert</a>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="text-uppercase font-12 font-weight-bold">Topic</div>
-                    <div class="dropdown">
-                        <div class="rounded-top lightpurple-bg text-white border-bottom dropdown-toggle dropdown-spacing" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Novice
-                        </div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Novice</a>
-                            <a class="dropdown-item" href="#">Intermediate</a>
-                            <a class="dropdown-item" href="#">Expert</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="text-uppercase font-12 font-weight-bold">Sort by</div>
-                    <div class="dropdown">
-                        <div class="rounded-top lightpurple-bg text-white border-bottom dropdown-toggle dropdown-spacing" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Most Popular
-                        </div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Most Popular</a>
-                            <a class="dropdown-item" href="#">Most Recent</a>
-                            <a class="dropdown-item" href="#">Most Viewed</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="sort">
+            <h5>SORT BY</h5>
+            <div class="dropdown w-100">
+                <button class="btn btn-secondary dropdown-toggle dropdown-spacing shadow-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Most popular
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Most Popular</a>
+                    <a class="dropdown-item" href="#">Most Recent</a>
+                    <a class="dropdown-item" href="#">Most Viewed</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Results section -->
-    <section class="py-5">
+    <section class="py-5 results">
         <div class="container opacity-35">11 videos</div>
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3">
