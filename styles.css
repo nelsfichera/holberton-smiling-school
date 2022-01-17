@@ -75,6 +75,12 @@ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del
     src:local('./fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Sans Source Pro Italic Bold';
+    src:url('./fonts/source-sans-pro/SourceSansPro-BoldIt.otf'), format('opentype');
+    src: local('./fonts/source-sans-pro/SourceSansPro-BoldIt.otf'), format('opentype');
+}
+
 .header-home-page {
     background-image: url('./images/pic_1.jpg');
     background-repeat:no-repeat;
@@ -103,6 +109,21 @@ h2 {
     font-size: var(--font-size-lrg);
 }
 
+h3 {
+    font-family: 'Sans Source Pro Bold', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-lrg);
+}
+
+h4 {
+    font-family: 'Sans Source Pro Bold', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-mod);
+}
+
+h5 {
+    font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-mid);
+}
+
 strong {
     color: var(--color-violet);
     font-family: 'Sans Source Pro Bold', Arial, Helvetica, sans-serif;
@@ -116,6 +137,11 @@ ul {
 
 nav ul {
     font-size: var(--font-size-xxs);
+}
+
+p { 
+    font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-sml);
 }
 
 .pt-5, .mt-5 {
@@ -207,12 +233,12 @@ section {
 }
 
 .membership {
-    background-color: var(--color-black-custom);
+    background-color: var(--color-black-custom) !important;
 
 }
 
 .vids {
-
+    background-color: var(--color-white);
 }
 
 footer {
@@ -222,24 +248,30 @@ footer {
 
 }
 
-header .pricing {
 
+.pricing-header {
+    background-image: url('./images/pic_2.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-.pricing-hero {
-
+.holberton_school-icon-check {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2371%) hue-rotate(51deg) brightness(93%) contrast(92%);
 }
 
-.pricing-grid {
-
+.grid-h2 {
+    font-size: var(--font-size-mid);
 }
-
 .quote-carosel-pricing {
 
 }
 
 .faq-grid {
-
+    background-color: var(--color-white);
 }
 
 footer .pricing {
@@ -250,16 +282,62 @@ header .courses {
 
 }
 
+.courses-header {
+    background-image: url('./images/pic_3.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+h4.courses-header-tag {
+    font-family: 'Sans Source Pro Italic Bold', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--color-white);
+    font-size: var(--font-size-lrg);
+}
+
 .courses-hero {
 
 }
 
-.search {
+.form-control {
+    background-color: var(--color-white);
+    opacity: 0.5;
+}
 
+.input-group {
+    background-color: var(--color-white);
+    opacity: 0.5;
+    border: 0px;
+    box-shadow: none;
+}
+
+input {
+    border: 0;
+    box-shadow: none;
+}
+
+.input-group-prepend{
+    border: 0px;
+    box-shadow: none;
+}
+img .search {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(24deg) brightness(104%) contrast(103%);
+    opacity: 0.9;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active .btn-secondary:visited {
+    background-color: var(--color-violet) !important;
+    border: 0;
+    background-size: cover;
 }
 
 .results {
-
+    background-color: var(--color-white);
 }
 
 footer .courses {
